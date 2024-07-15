@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./resource/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>College</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Top bar with contact info -->
+      <div
+        class="bg-indigo-800 h-16 md:h-10 text-white flex flex-col md:flex-row md:justify-evenly items-center"
+      >
+        <div
+          class="text-am text-center sm:text-base address flex sm:items-center"
+        >
+          <p>
+            <i class="fa-solid fa-location-dot px-1 sm:px-1"></i>Pranchi Vihar
+            Colony, Dindayal Puram, Raigarh, Chhattisgarh 496001
+          </p>
+        </div>
+        <div class="contact-info flex items-center">
+          <div class="text-am sm:text-base flex items-center px-1">
+            <i class="fa-solid fa-phone px-1"></i>
+            <p>123456789</p>
+          </div>
+          <span class="px-2">|</span>
+          <div class="text-am sm:text-base flex items-center">
+            <i class="fa-solid fa-envelope px-1"></i>
+            <p class="">anancollege@email.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo and title section -->
+      <div class="logo flex justify-center items-center py-4">
+        <img
+          class="w-36 sm:w-40 px-6 mix-blend-darken"
+          src="./resource/logo.png"
+          alt="logo"
+        />
+        <div>
+          <h2 class="text-xl sm:text-4xl text-red-600 font-bold">
+            ANANT COLLEGE
+          </h2>
+          <p class="sm:text-xl text-center text-indigo-800">Raigarh</p>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav
+        class="sticky top-0 z-50 flex h-10 justify-end bg-indigo-800 sm:block"
+      >
+        <ul
+          class="fixed left-0 top-0 sm:static hidden min-h-screen z-50 w-40 bg-indigo-800 px-3 py-3 sm:py-1 text-base text-white sm:flex sm:min-h-0 sm:w-full sm:items-center sm:justify-evenly sm:bg-transparent"
+        >
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Course</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Admission</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Notice</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Student Corner</a>
+          </li>
+          <li
+            class="border-b-[1px] sm:border-none py-3 border-gray-500 sm:py-0"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="sm:hidden">
+          <i class="fa-solid fa-bars m-3 text-xl text-white"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content to enable scrolling -->
+    <main>
+      <!-- hero like  -->
+      <section>
+        <div
+          id="indicators-carousel"
+          class="relative w-full"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src="./resource/anant-img-1.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./resource/anant-img-2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./resource/hero-img.jpeg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./resource/anant-img-1.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./resource/anant-img-2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- other content  -->
+      <section
+        class="py-5 flex flex-col items-center md:flex-row md:justify-evenly md:items-center"
+      >
+        <div>
+          <div class="border-b-1 my-4">
+            <p class="text-2xl font-bold px-2 border-l-2 border-indigo-800">
+              Our Facilities
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-gray-400 mb-7 sm:mb-0 h-[365px] w-[340px] sm:w-72"
+          >
+            <ul>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/library.png"
+                  alt="libary"
+                  class="w-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Library</a>
+              </li>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/graduated.png"
+                  alt="libary"
+                  class="w-7 h-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Student Center</a>
+              </li>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/ux.png"
+                  alt="libary"
+                  class="w-7 h-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Computer Labs</a>
+              </li>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/lecture.png"
+                  alt="libary"
+                  class="w-7 h-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Lecture Halls</a>
+              </li>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/sports.png"
+                  alt="libary"
+                  class="w-7 h-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Sports Fields</a>
+              </li>
+              <li class="m-5 flex items-center">
+                <img
+                  src="./resource/audience.png"
+                  alt="libary"
+                  class="w-7 h-7 mr-4"
+                /><a class="text-[25px] font-light" href="#">Auditorium</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="border-b-1 my-4">
+            <p class="text-2xl font-bold px-2 border-l-2 border-indigo-800">
+              News & Event
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-gray-400 mb-7 sm:mb-0 h-[365px] w-[340px] sm:w-80 relative"
+          >
+            <div>
+              <ul>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+                <li class="m-3">
+                  <span
+                    class="text-am mr-3 bg-indigo-800 p-1 text-white rounded-md"
+                    >20 june 2024</span
+                  >
+                  <a class="text-indigo-700 font-serif text-xl" href="#"
+                    >Today News</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button
+              class="p-1 rounded-md bg-red-600 text-white absolute bottom-1 right-1"
+            >
+              See More
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="border-b-1 my-4">
+            <p class="text-2xl font-bold px-2 border-l-2 border-indigo-900">
+              Important Links
+            </p>
+          </div>
+          <div class="border-[1px] border-gray-400 h-[365px] w-[340px] sm:w-72">
+            <ul>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text-red-600 pr-3"></i
+                >Syllabus
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Fee Structure
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Facilities
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Result
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Gallry
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Staff
+              </li>
+              <li
+                class="text-xl m-5 text-indigo-900 sm:font-semibold font-serif sm:font-sans"
+              >
+                <i class="fa-solid fa-angles-right text text-red-600 pr-3"></i
+                >Addmision
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="courses mb-8 mt-8 bg-fixed bg-no-repeat bg-cover relative before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-indigo-800/50 before:z-0"
+        style="background-image: url(./resource/coursebg.jpg)"
+      >
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl font-serif font-bold text-white z-40">
+            Our Courses
+          </h2>
+          <div class="h-1 bg-red-500 w-36 items-center z-40"></div>
+        </div>
+
+        <div
+          class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center"
+        >
+          <div
+            class="w-72 flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="./resource/com-science.jpg"
+              class="w-72 h-[191px] object-fill"
+              alt="course-img"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Computer science
+            </h2>
+          </div>
+          <div
+            class="w-72 flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="https://s3-ap-south-1.amazonaws.com/ricedigitals3bucket/AUPortalContent/2021/07/15153622/Untitled-design-62.png"
+              alt="course-img"
+              class="w-72 h-[191px] object-fill"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Commerce
+            </h2>
+          </div>
+          <div
+            class="w-72 flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="https://img.freepik.com/free-vector/colorful-science-education-background_23-2148490697.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721001600&semt=sph"
+              alt="course-img"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Science
+            </h2>
+          </div>
+          <div
+            class="w-72 sm flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1092170964/vector/history-doodles-with-lettering.jpg?s=612x612&w=0&k=20&c=J-X75GlaxTBRIAMKQaSahDsf2WgzlhnffbUlYb8N594="
+              alt="course-img"
+              class="w-72 h-[191px] object-fill"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Arts
+            </h2>
+          </div>
+          <div
+            class="w-72 flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="https://st.depositphotos.com/1057833/4881/v/950/depositphotos_48817527-stock-illustration-black-graduation-cap-with-degree.jpg"
+              alt="course-img"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Diploma
+            </h2>
+          </div>
+          <div
+            class="w-72 flex flex-col items-center rounded-2xl overflow-hidden mb-5 z-40"
+          >
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/022/661/453/original/cute-computer-doodle-illustration-with-a-face-isolated-on-white-background-vector.jpg"
+              alt="course-img"
+            />
+            <h2 class="text-xl text-center text-white bg-red-800 w-full">
+              Computer Basics
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-12 px-4 md:px-8 bg-white shadow-md rounded-md max-w-4xl mx-auto mt-12"
+      >
+        <h2 class="text-3xl font-bold text-center mb-8 text-indigo-800">
+          About Us
+        </h2>
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+          <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+            <img
+              src="./resource/logo.png"
+              alt="Logo"
+              class="w-32 h-32 object-contain"
+            />
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-semibold text-indigo-800">
+              Anant College
+            </h3>
+            <hr class="my-4 border-t-2 border-gray-300" />
+            <p class="text-gray-700 leading-relaxed">
+              Anant College is dedicated to providing top-notch education and
+              fostering a learning environment that encourages innovation and
+              excellence. Our mission is to empower students with the skills and
+              knowledge necessary to thrive in their chosen fields. Join us and
+              be a part of a community that values growth, creativity, and
+              success.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div
+          class="h-auto md:h-72 w-full text-white bg-indigo-800 text-sm flex flex-col md:flex-row md:items-start md:justify-center"
+        >
+          <div class="m-6">
+            <h3 class="text-2xl text-yellow-400 mb-4">Useful Links</h3>
+            <ul class="text-base">
+              <li
+                class="mb-2 hover:translate-x-3 transition ease-in-out duration-100"
+              >
+                <a href="#"><i class="fa-solid fa-angle-right pr-2"></i>Home</a>
+              </li>
+              <li
+                class="mb-2 hover:translate-x-3 transition ease-in-out duration-100"
+              >
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right pr-2"></i>About Us</a
+                >
+              </li>
+              <li
+                class="mb-2 hover:translate-x-3 transition ease-in-out duration-100"
+              >
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right pr-2"></i>Notice</a
+                >
+              </li>
+              <li
+                class="mb-2 hover:translate-x-3 transition ease-in-out duration-100"
+              >
+                <a href="#"><i class="fa-solid fa-angle-right pr-2"></i>SNPV</a>
+              </li>
+              <li
+                class="mb-2 hover:translate-x-3 transition ease-in-out duration-100"
+              >
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right pr-2"></i>Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="m-6 w-96">
+            <h3 class="text-2xl text-yellow-400 mb-4">Contact Info</h3>
+            <ul class="text-base">
+              <li class="mb-4">
+                <i class="fa-solid fa-location-dot px-1"></i>
+                Pranchi Vihar Colony, Dindayal Puram, Raigarh, Chhattisgarh
+                496001
+              </li>
+              <li class="mb-4">
+                <a href="#"><i class="fa-solid fa-phone px-1"></i>123456789</a>
+              </li>
+              <li class="mb-2">
+                <a href="#"
+                  ><i class="fa-solid fa-envelope px-1"></i>anant@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="m-6">
+            <h3 class="text-2xl text-yellow-400 mb-4">Find Us Here</h3>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.1983528986893!2d83.41326192876535!3d21.87646433627043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2725af2f0314d1%3A0x51b514931278ef3e!2sANANT%20COLLEGE!5e0!3m2!1sen!2sin!4v1720872897040!5m2!1sen!2sin"
+                width=""
+                height="180"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="sm:w-96[400px]"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sm:h-11 w-full text-am sm:text-base text-white bg-indigo-800 flex flex-col items-center sm:flex-row sm:items-center sm:justify-between mt-[1px]"
+        >
+          <div class="mb-2 sm:mb-0 sm:pl-6">
+            <p>&copy; 2024. All rights reserved by Anant College</p>
+          </div>
+          <div class="mb-2 sm:mb-0 sm:pl-6 flex">
+            <p>Designed by&nbsp;</p>
+            <a class="underline" href="https://github.com/Madhusudan-Sharma-516"
+              >Madhusudan Sharma</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector("[data-carousel]");
+        const items = carousel.querySelectorAll("[data-carousel-item]");
+        const indicators = carousel.querySelectorAll(
+          "[data-carousel-slide-to]"
+        );
+        const prevButton = carousel.querySelector("[data-carousel-prev]");
+        const nextButton = carousel.querySelector("[data-carousel-next]");
+
+        let currentIndex = 0;
+        let autoSlideInterval = 5000; // 5 seconds
+        let intervalId;
+
+        function showItem(index) {
+          items.forEach((item, i) => {
+            item.classList.toggle("hidden", i !== index);
+            item.classList.toggle("active", i === index);
+          });
+          indicators.forEach((indicator, i) => {
+            indicator.setAttribute(
+              "aria-current",
+              i === index ? "true" : "false"
+            );
+          });
+        }
+
+        function nextItem() {
+          currentIndex = (currentIndex + 1) % items.length;
+          showItem(currentIndex);
+        }
+
+        function prevItem() {
+          currentIndex = currentIndex > 0 ? currentIndex - 1 : items.length - 1;
+          showItem(currentIndex);
+        }
+
+        prevButton.addEventListener("click", () => {
+          prevItem();
+          resetAutoSlide();
+        });
+
+        nextButton.addEventListener("click", () => {
+          nextItem();
+          resetAutoSlide();
+        });
+
+        indicators.forEach((indicator, i) => {
+          indicator.addEventListener("click", () => {
+            currentIndex = i;
+            showItem(currentIndex);
+            resetAutoSlide();
+          });
+        });
+
+        function startAutoSlide() {
+          intervalId = setInterval(nextItem, autoSlideInterval);
+        }
+
+        function resetAutoSlide() {
+          clearInterval(intervalId);
+          startAutoSlide();
+        }
+
+        // Initialize the first item
+        showItem(currentIndex);
+        startAutoSlide();
+      });
+
+      // navigator
+      let btn = document.querySelector("nav div i");
+      let navList = document.querySelector("nav ul");
+
+      btn.addEventListener("click", () => {
+        if (
+          navList.classList.contains("hidden") &&
+          btn.classList.contains("fa-bars")
+        ) {
+          navList.classList.remove("hidden");
+          btn.classList.remove("fa-bars");
+          btn.classList.add("fa-xmark");
+        } else {
+          navList.classList.add("hidden");
+          btn.classList.remove("fa-xmark");
+          btn.classList.add("fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>
