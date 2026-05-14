@@ -1,3 +1,3 @@
 ## Anant College 
-This project it for learing purposes 
-https://madhusudan-sharma-516.github.io/AnantCollege/
+This is a college website made on React js 
+https://anantcollege.vercel.app/
